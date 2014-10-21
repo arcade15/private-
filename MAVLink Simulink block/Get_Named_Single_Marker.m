@@ -14,11 +14,13 @@ end
 
 
 % X, Y, Z Global Coordinates of the Named Marker
-Output_GetMarkerGlobalTranslation = MyClient.GetMarkerGlobalTranslation('testa', 'testa');
-ViconPose(1) = Output_GetMarkerGlobalTranslation.Translation(1);  % X-coordinate
-ViconPose(2) = Output_GetMarkerGlobalTranslation.Translation(2);  % Y-coordinate
-ViconPose(3) = Output_GetMarkerGlobalTranslation.Translation(3);  % Z-coordinate
+Output = MyClient.GetMarkerGlobalTranslation('0811V1', '123');
 
+% % X, Y, Z Global Coordinates
+% Output = MyClient.GetUnlabeledMarkerGlobalTranslation(1);
+% ViconPose(1) = Output.Translation(1);  % X-coordinate
+% ViconPose(2) = Output.Translation(2);  % Y-coordinate
+% ViconPose(3) = Output.Translation(3);  % Z-coordinate
 
 
 
